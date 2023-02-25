@@ -75,13 +75,23 @@ class ProductCard extends StatelessWidget {
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
                   ),
                 ),
-                 Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Text(
-                    price,
-                    style: TextStyle(fontSize: 15, ),
-                  ),
+                 Spacer(),
+                 Container(
+                   height: 50,
+                   decoration: BoxDecoration(
+                     borderRadius: BorderRadius.circular(8),
+                     color: Colors.blue
+                   ),
+                   child: Center(
+                     child: Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text(
+                        price+'ريال  ',
+                        style: TextStyle(fontSize: 15,color: Colors.white ),
+                      ),
                 ),
+                   ),
+                 ),
               ],
             ),
 

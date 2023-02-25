@@ -27,6 +27,7 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  url_launcher: ^6.1.10
   maps_launcher: ^2.2.0
   smooth_page_indicator:
   flutter_svg:

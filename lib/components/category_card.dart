@@ -8,11 +8,13 @@ class CategoryItem extends StatefulWidget {
   bool isSelected ;
   final String? iconData;
   final String title;
+  final GestureTapCallback? onTap;
+
   CategoryItem(
       {Key? key,
       required this.isSelected,
       required this.iconData,
-      required this.title})
+      required this.title,  this.onTap})
       : super(key: key);
 
   @override
@@ -23,11 +25,7 @@ class _CategoryItemState extends State<CategoryItem> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        setState(() {
-         // widget.isSelected = !widget.isSelected;
-        });
-      },
+      onTap: widget.onTap,
       child: Container(
         margin: const EdgeInsets.only(right: 4, left: 8, top: 4, bottom: 8),
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
